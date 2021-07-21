@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVAutoFakeServer", "TVAutoFakeServer\TVAutoFakeServer.csproj", "{460D820E-5EF8-41C5-B9FE-8AB1DE4FD4BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460D820E-5EF8-41C5-B9FE-8AB1DE4FD4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460D820E-5EF8-41C5-B9FE-8AB1DE4FD4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460D820E-5EF8-41C5-B9FE-8AB1DE4FD4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460D820E-5EF8-41C5-B9FE-8AB1DE4FD4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB914FA6-D3A3-4572-9D65-876B25B2C6C8}
+	EndGlobalSection
+EndGlobal
