@@ -24,7 +24,7 @@ namespace TVAutoFakeServer
 		public AppRun()
 		{
 			// bind len IP cua server TVAuto
-			TcpListener listener = new TcpListener(IPAddress.Parse("103.92.26.100"), 60000);
+			TcpListener listener = new TcpListener(IPAddress.Parse("103.92.26.100"), 61000);
 			listener.Start();
 			while(true)
 			{
