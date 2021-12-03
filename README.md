@@ -8,7 +8,7 @@ Tool này mình viết ra để active TVAuto. Cách hoạt động của nó nh
 
 ## Cách sử dụng
 - Tạo 1 card mạng loopback và đặt địa chỉ IP 103.92.26.100 subnetmask 255.255.255.255 (đây là IP của server kích hoạt TVAuto cũng là IP của website nó luôn).
-- Bật tool, nó ra cái cửa sổ console màu đen, kệ nó.
+- Bật TVAutoFakeServer.exe, nó ra cái cửa sổ console màu đen, kệ nó.
 - Bật TVAuto, vào mục tài khoản điền vớ vẩn rồi bấm đăng nhập là xong.
 
 ![hình ảnh kích hoạt](active-tvauto.PNG?raw=true "hình ảnh kích hoạt")
