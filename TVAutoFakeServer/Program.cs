@@ -20,7 +20,11 @@ namespace TVAutoFakeServer
 
 	class AppRun
 	{
+		// do code này mình dịch ngược từ bản exe năm 2016 do mình không giữ
+		// source nên code đã được Visual Studio optimize, nhiều đoạn sẽ hơi khác với cách con người code
+		// ví dụ như cái biến writing này
 		bool writing = false;
+
 		public AppRun()
 		{
 			// bind len IP cua server TVAuto
@@ -48,6 +52,7 @@ namespace TVAutoFakeServer
 			writer.Write(0x0a);
 			Console.WriteLine("Server Send: " + "1040");
 
+			// khởi tạo thread update thời gian xuống client
 			new Thread(Update).Start(writer);
 
 			while (true)
@@ -57,7 +62,7 @@ namespace TVAutoFakeServer
 				message = FromHex(message);
 				Console.WriteLine("Received: " + message);
 
-				if (message.StartsWith("1002"))
+				if (message.StartsWith("1002")) // code check vớ vẩn gì đó, nhưng đại loại là nó gửi 1002 thì mình gửi 1010
 				{
 					while (writing) { }
 					writing = true;
@@ -65,7 +70,7 @@ namespace TVAutoFakeServer
 					writing = false;
 					Console.WriteLine("Server Send: " + "1010");
 				}
-				else if (message.StartsWith("1011"))
+				else if (message.StartsWith("1011")) // hỏi các chức năng được active
 				{
 					while (writing) { }
 					writing = true;
@@ -109,16 +114,16 @@ namespace TVAutoFakeServer
 
 			while (true)
 			{
-				int sothu = (int)DateTime.Today.DayOfWeek + 1;
-				sothu = (sothu == 1 ? 8 : sothu);
+				int thu_trong_tuan = (int)DateTime.Today.DayOfWeek + 1;
+				thu_trong_tuan = (thu_trong_tuan == 1 ? 8 : thu_trong_tuan);
 				string time = DateTime.Now.ToString("HH:mm:ss dd/MM/yyyy");
 
 				while (writing) { }
 				writing = true;
-				writer.Write(ToHex("1008") + "83" + ToHex("Th") + "F820" + ToHex((sothu).ToString()) + "20" + ToHex(time) + "\r\n");
+				writer.Write(ToHex("1008") + "83" + ToHex("Th") + "F820" + ToHex((thu_trong_tuan).ToString()) + "20" + ToHex(time) + "\r\n");
 				writing = false;
 
-				Console.WriteLine("Server Send: " + "1008" + " 83 " + "Thứ " + sothu.ToString() + " " + time);
+				Console.WriteLine("Server Send: " + "1008" + " 83 " + "Thứ " + thu_trong_tuan.ToString() + " " + time);
 				
 				Thread.Sleep(1000);			
 			}
