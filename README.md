@@ -11,6 +11,6 @@ Tool này mình viết ra để active TVAuto. Cách hoạt động của nó nh
 - Bật TVAutoFakeServer.exe, nó ra cái cửa sổ console màu đen, kệ nó.
 - Bật TVAuto, vào mục tài khoản điền vớ vẩn rồi bấm đăng nhập là xong.
 
-![hình ảnh kích hoạt](active-tvauto.PNG?raw=true "hình ảnh kích hoạt")
+![hình ảnh kích hoạt](images/active-tvauto.PNG?raw=true "hình ảnh kích hoạt")
 
 ### Mình thấy trên Youtube có vài bạn có phát hành bản crack, mình vào xem thử thì họ làm y chang mình, không biết có phải từ source của mình ra hay không. Bản crack này mình làm từ hồi 2016, sau một lần share FB thì thằng chủ TVAuto cho acc FB mình bay màu luôn. Đến 2020 mình có share lại bản mới. Các bạn có thể đem đi phát triển hay làm video tùy ý nhưng nhớ ghi nguồn giúp mình.
